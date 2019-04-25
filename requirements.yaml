@@ -15,9 +15,13 @@ dependencies:
     repository: https://kubernetes-charts-incubator.storage.googleapis.com/
     condition: docker-registry.enabled
   - name: external-dns
-    version: 1.6.1
+    version: 1.7.4
     repository: https://kubernetes-charts.storage.googleapis.com/
     condition: external-dns.enabled
   - name: etcd
     version: 0.6.2
     repository: https://kubernetes-charts-incubator.storage.googleapis.com/
+  - name: ambassador
+    version: 2.2.1
+    repository: https://kubernetes-charts.storage.googleapis.com/
+    condition: ambassador.enabled
